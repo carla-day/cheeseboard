@@ -106,6 +106,6 @@ test('test Board can have cheese and cheese can have boards 2', async function()
     const allCheeses = await Board.findAll({
         include:[{model: Cheese}]
     })
-    expect(allCheeses[0].Cheese.length).toBe(2)
+    expect(allCheeses[0].Cheeses.length).toBe(2)
 })
 })
